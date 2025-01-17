@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Description Creator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e2633;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e2633;
+      padding: 10px 20px;
+      border-bottom: 1px solid #3e4a61;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .header .menu {
+      display: flex;
+      gap: 30px;
+    }
+    .header .menu a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .header .menu a:hover {
+      color: #3162ff;
+    }
+    .header .menu .button {
+      background-color: #3162ff;
+      margin-right : 30px ;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+    .back-arrow {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .back-arrow:hover {
+      color: #3162ff;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: calc(100vh - 60px);
+      padding: 20px;
+      padding-top: 70px;
+      margin-top: 10px;
+    }
+    .combined-box {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      background-color: #293143;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+    .left-panel {
+      flex: 1;
+      padding: 20px;
+      background-color: #2c3845;
+      border-right: 1px solid #3e4a61;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 60px);
+      overflow-x: hidden;
+      position: relative;
+    }
+    .right-panel {
+      flex: 1;
+      padding: 20px;
+      background-color: #2c3845;
+      border-radius: 10px;
+      margin-left: 20px;
+      white-space: normal;
+      overflow : auto;
+      word-break: break-word;
+    }
+    pre{
+      display : flex ;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input , select , textarea {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #3e4a61;
+      background-color: #1e2633;
+      color: #fff;
+      border-radius: 5px;
+    }
+    select{
+      width: 99%;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background-color: #3162ff;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #2750c7;
+    }
+    .no-results {
+      text-align: center;
+    }
+    .no-results img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    .no-results p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="back-arrow">&larr;</a>
+  <header class="header">
+    <div class="logo">AI JOB GENERATOR</div>
+    <nav class="menu">
+      <a href="#">AI Agent</a>
+      <a href="#">About</a>
+      <a href="#">Pricing</a>
+      <a href="#" class="button">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="combined-box">
+      <form class="left-panel" id="jobDescriptionForm" action="/" method="POST">
+        <div>
+          <h2>Job Description Creator</h2>
+          <p>Create comprehensive and engaging job descriptions that attract top talent</p>
+        </div>
+        <label for="job_title">Job Title *</label>
+        <input type="text" id="job_title" name="job_title" placeholder="e.g., App Developer Employee" required />
+
+        <label for="company">Company *</label>
+        <input type="text" id="company" name="company" placeholder="e.g., Uptoskills" required />
+
+        <label for="degree">Degree *</label>
+        <input type="text" id="degree" name="degree" placeholder="e.g.,B.E Computer Science Engineering" required />
+
+        <label for="languages">Languages *</label>
+        <input type="text" id="languages" name="languages" placeholder="e.g., Python, HTML, CSS" required />
+
+        <label for="experience_level">Experience Level *</label>
+        <select name="experience_level" id="experience_level" required>
+          <option value="Entry level (0-1 years)">Entry level (0-1 years)</option>
+          <option value="Medium level (1-5 years)">Medium level (1-5 years)</option>
+          <option value="Experienced level (more than 5 years)">Experienced level (more than 5 years)</option>
+        </select>
+
+        <label for="location">Location *</label>
+        <input type="text" id="location" name="location" placeholder="e.g., Chennai, TamilNadu, India" required />
+
+        <label for="job_type">Job Type *</label>       
+        <input list="job_type-options" id="job_type" name="job_type" required>
+        <datalist id="job_type-options">
+          <option value="Remote (Online)">
+          <option value="Hybrid (Both Online and Offline)">
+          <option value="On-site (Offline)"> 
+        </datalist>
+
+        <button type="submit">Generate Results</button>
+      </form>
+      <div class="right-panel">
+        <pre>{{ job_description }} </pre>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Job Title: App Development Employee
+
+Company: Uptoskills
+
+Location: Coimbatore (Remote)
+
+Job Type: Remote (Online)
+
+Experience Level: Entry Level (0-1 years)
+
+Degree Required: Computer Science Engineering
+
+Languages: Python, Flutter
+
+
+Job Description:
+
+Uptoskills, a dynamic and growing technology company, is seeking a highly motivated and talented Entry-Level App Development Employee to join our remote team based in Coimbatore.  This is a fantastic opportunity for a recent Computer Science Engineering graduate to launch their career in a supportive and collaborative environment.  As an App Development Employee, you will contribute to the development and maintenance of our mobile applications using Python and Flutter.
+
+Responsibilities:
+
+* Develop and maintain mobile applications using Python and Flutter.
+* Participate in all phases of the software development lifecycle, from design to deployment.
+* Collaborate with a team of experienced engineers to design, develop, and test applications.
+* Write clean, well-documented, and efficient code.
+* Troubleshoot and debug applications.
+* Contribute to the improvement of our development processes.
+* Stay up-to-date with the latest technologies and trends in mobile app development.
+
+
+Qualifications:
+
+* Bachelor's degree in Computer Science Engineering or a related field.
+* 0-1 year of experience in mobile app development (internships count).
+* Proficiency in Python and Flutter.
+* Strong understanding of object-oriented programming principles.
+* Familiarity with Git and version control.
+* Excellent problem-solving and communication skills.
+* Ability to work independently and as part of a team.
+* Strong work ethic and commitment to delivering high-quality work.
+
+
+About Uptoskills (7 points):
+
+1.  Uptoskills is a technology-focused company committed to innovation and growth.
+2.  We offer a supportive and collaborative work environment where employees can learn and grow.
+3.  We provide opportunities for professional development and advancement.
+4.  We value creativity, teamwork, and a strong work ethic.
+5.  We are committed to providing our employees with the resources they need to succeed.
+6.  We offer a competitive salary and benefits package.
+7.  We embrace remote work and provide the necessary tools and support for successful remote collaboration.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
