@@ -1,1 +1,1 @@
-# jobdescriptioncreator
+# AI Job Description Creator
